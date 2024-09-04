@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Container from "./Container.astro";
+import { Form } from "../Form/Form.jsx";
+---
+
+<Layout title="">
+	<section
+		class="w-full h-full bg-red-100 z-40 sticky top-0 flex items-center justify-center flex-col min-h-screen"
+		id="sectionFour">
+		<Container>
+			<article class="flex items-center flex-col gap-10 w-full">
+				<Form />
+			</article>
+		</Container>
+	</section>
+</Layout>
