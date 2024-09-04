@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-import img from "../../img/0056.png";
+import img from "../../img/logorosa.png";
 import "./MySwal.css";
 
 const MySwal = withReactContent(Swal);
