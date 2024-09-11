@@ -80,68 +80,6 @@ export function Form() {
 								</div>
 							</div>
 
-							<div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-								<div>
-									<label
-										htmlFor="Option1"
-										className="block w-full cursor-pointer  border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-										tabIndex="0">
-										<input
-											className="sr-only"
-											id="Option1"
-											type="radio"
-											tabIndex="-1"
-											name="option"
-										/>
-
-										<span className="text-sm">
-											{" "}
-											Opción 1{" "}
-										</span>
-									</label>
-								</div>
-
-								<div>
-									<label
-										htmlFor="Option2"
-										className="block w-full cursor-pointer  border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-										tabIndex="0">
-										<input
-											className="sr-only"
-											id="Option2"
-											type="radio"
-											tabIndex="-1"
-											name="option"
-										/>
-
-										<span className="text-sm">
-											{" "}
-											Opción 2{" "}
-										</span>
-									</label>
-								</div>
-
-								<div>
-									<label
-										htmlFor="Option3"
-										className="block w-full cursor-pointer  border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-										tabIndex="0">
-										<input
-											className="sr-only"
-											id="Option3"
-											type="radio"
-											tabIndex="-1"
-											name="option"
-										/>
-
-										<span className="text-sm">
-											{" "}
-											Opción 3{" "}
-										</span>
-									</label>
-								</div>
-							</div>
-
 							<div>
 								<label className="sr-only" htmlFor="message">
 									Mensaje
@@ -158,11 +96,11 @@ export function Form() {
 								<button
 									type="submit"
 									className="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
-									<span class="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+									<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
 										Enviar
 									</span>
-									<span class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
-									<span class="absolute"></span>
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+									<span className="absolute"></span>
 								</button>
 							</div>
 						</form>
