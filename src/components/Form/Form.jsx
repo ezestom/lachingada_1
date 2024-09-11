@@ -4,23 +4,38 @@ export function Form() {
 			<div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
 				<div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
 					<div className="lg:col-span-2 lg:py-12">
-						<h1>Section 4</h1>
+						<h1>Contacto</h1>
 						<h2>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Quisquam quibusdam, voluptates, quod, quia
-							quae quos quas quidem quae quibusdam, voluptates,
-							quod, quia quae quos quas quidem quae
+							Te esperamos en nuestros locales, siempre felices de
+							recibirte
 						</h2>
-						<div className="mt-8">
-							<a
-								href="#"
-								className="text-2xl font-bold text-pink-600">
-								{" "}
-								0151 475 4450{" "}
-							</a>
+						<div className="mt-16 gap-8 ">
+							<address className="flex flex-col">
+								<a
+									href="https://maps.app.goo.gl/UfdP48yNGoGyUZSE9"
+									target="_blank">
+									Coronel Mora 549, Punta Carretas
+								</a>
+								<a
+									href="#"
+									className="text-2xl font-bold text-pink-600">
+									{" "}
+									097 477 434{" "}
+								</a>
+							</address>
 
-							<address className="mt-2 not-italic">
-								Uruguay Road, Montevideo, 12134
+							<address className="flex flex-col">
+								<a
+									href="https://maps.app.goo.gl/J4F9P4DUE1U9GSTX9"
+									target="_blank">
+									Cubo del Norte 3847, Prado
+								</a>
+								<a
+									href="#"
+									className="text-2xl font-bold text-pink-600">
+									{" "}
+									092 257 730{" "}
+								</a>
 							</address>
 						</div>
 					</div>
@@ -142,8 +157,12 @@ export function Form() {
 							<div className="mt-4">
 								<button
 									type="submit"
-									className="inline-block w-full  bg-black px-5 py-3 font-medium text-white sm:w-auto">
-									Enviar mensaje
+									className="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+									<span class="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+										Enviar
+									</span>
+									<span class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+									<span class="absolute"></span>
 								</button>
 							</div>
 						</form>

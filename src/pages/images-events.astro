@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/ui/Container.astro";
+import { GridSwiper } from "../components/GridSwiper/GridSwiper.jsx";
+import img1 from "../img/eventos/1.jpg";
+import img2 from "../img/eventos/2.jpg";
+import img3 from "../img/eventos/3.jpg";
+import img4 from "../img/eventos/4.jpg";
+import img5 from "../img/eventos/5.jpg";
+import img6 from "../img/eventos/6.jpg";
+import img7 from "../img/eventos/7.jpg";
+import img8 from "../img/eventos/8.jpg";
+
+const images = [
+	{
+		id: "1",
+		largeURL: img1.src,
+		thumbnailURL: img1.src,
+		title: "Imagen 1",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "2",
+		largeURL: img2.src,
+		thumbnailURL: img2.src,
+		title: "Imagen 2",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "3",
+		largeURL: img3.src,
+		thumbnailURL: img3.src,
+		title: "Imagen 3",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "4",
+		largeURL: img4.src,
+		thumbnailURL: img4.src,
+		title: "Imagen 4",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "5",
+		largeURL: img5.src,
+		thumbnailURL: img5.src,
+		title: "Imagen 5",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "6",
+		largeURL: img6.src,
+		thumbnailURL: img6.src,
+		title: "Imagen 6",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "7",
+		largeURL: img7.src,
+		thumbnailURL: img7.src,
+		title: "Imagen 7",
+		width: 4000,
+		height: 6000,
+	},
+	{
+		id: "8",
+		largeURL: img8.src,
+		thumbnailURL: img8.src,
+		title: "Imagen 8",
+		width: 4000,
+		height: 6000,
+	},
+];
+---
+
+<Layout title="Fotos de los Eventos en La Chingada">
+	<section class="bg-red-50 h-full md:min-h-screen">
+		<button
+			onclick="window.history.back()"
+			class="cursor-pointer fixed top-0 right-0 group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+			<span
+				class="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+				<span class="mr-1">←</span>Volver
+			</span>
+			<span
+				class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"
+			></span>
+			<span class="absolute"></span>
+		</button>
+		<Container>
+			<div class="flex flex-col items-center justify-center py-10">
+				<h1>Eventos en La Chingada</h1>
+				<h2>
+					¿Te gustaría reservar uno de nuestros locales para tu
+					evento? Tenemos una propuesta ideal para vos.
+				</h2>
+			</div>
+			<article class="flex justify-start items-center">
+				<GridSwiper client:load galleryID="myGallery" images={images} />
+			</article>
+		</Container>
+	</section>
+</Layout>

@@ -34,8 +34,8 @@ import { MyDrawer } from "../MyDrawer/MyDrawer.jsx";
 						<li>
 							<a
 								class="text-[--primary] font-semibold transition hover:scale-105"
-								href="#sectionThree">
-								Section 3
+								href="#events">
+								Eventos
 							</a>
 						</li>
 
@@ -53,9 +53,25 @@ import { MyDrawer } from "../MyDrawer/MyDrawer.jsx";
 			<div class="flex items-center gap-4">
 				<div class="sm:flex sm:gap-4">
 					<a
-						class="bg-[--green] px-4 py-2 text-sm font-medium text-white shadow"
-						href="#">
-						Whatsapp
+						href="#"
+						class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--green]">
+						<span
+							class="font-semibold text-white text-sm relative z-10 group-hover:text-[--green] duration-500"
+							>Whatsapp</span
+						>
+						<span
+							class="absolute top-0 left-0 w-full bg-[--green] duration-500 group-hover:-translate-x-full h-full"
+						></span>
+						<span
+							class="absolute top-0 left-0 w-full bg-[--green] duration-500 group-hover:translate-x-full h-full"
+						></span>
+
+						<span
+							class="absolute top-0 left-0 w-full bg-[--green] duration-500 delay-300 group-hover:-translate-y-full h-full"
+						></span>
+						<span
+							class="absolute delay-300 top-0 left-0 w-full bg-[--green] duration-500 group-hover:translate-y-full h-full"
+						></span>
 					</a>
 				</div>
 

@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import Container from "./Container.astro";
+import img from "../../img/0056.png";
+---
+
+<Layout title="">
+	<section
+		class="w-full h-full bg-red-50 z-30 sticky top-0 flex items-center justify-center flex-col min-h-screen"
+		id="events">
+		<Container>
+			<article
+				class="flex flex-col mt-16 md:mt-0 md:flex-row md:justify-between justify-center gap-10 w-full">
+				<div class="w-full md:max-w-[50%]">
+					<Image
+						class="w-full"
+						src={img}
+						alt="Imagen de la sección 3"
+					/>
+				</div>
+				<div
+					class="w-full md:max-w-[50%] flex flex-col justify-between">
+					<h1>Eventos</h1>
+					<h2>
+						¿Te gustaría reservar uno de nuestros locales para tu
+						evento? Tenemos una propuesta ideal para vos.
+					</h2>
+					<p>
+						Si buscás disfrutar del contacto con la naturaleza,
+						plantitas, flores y un ambiente súper mágico, nuestro
+						local del Prado es ideal. En cambio, si buscás estar en
+						el corazón de Punta Carretas en un espacio ambientado al
+						estilo casona mexicana con opción de terracita y mesas
+						altas, tu lugar se encuentra en Coronel Mora esquina
+						Gregorio Suárez :)
+					</p>
+					<p>
+						Reservá solo salón o la opción integral con la mejor
+						comida mexicana del planeta. Vos elegís ;)
+					</p>
+					<a
+						href="/images-events"
+						class="group flex items-center hover:text-[--green] transition">
+						Ver fotos de los eventos
+						<span
+							class="inline-block ml-2 transition-transform transform group-hover:translate-x-2">
+							→
+						</span>
+					</a>
+
+					<div class="sm:flex sm:gap-4">
+						<a
+							href="#"
+							class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--green]">
+							<span
+								class="font-semibold text-white text-sm relative z-10 group-hover:text-[--green] duration-500">
+								Consultanos por Whatsapp
+							</span>
+							<span
+								class="absolute top-0 left-0 w-full bg-[--green] duration-500 group-hover:-translate-x-full h-full"
+							></span>
+							<span
+								class="absolute top-0 left-0 w-full bg-[--green] duration-500 group-hover:translate-x-full h-full"
+							></span>
+
+							<span
+								class="absolute top-0 left-0 w-full bg-[--green] duration-500 delay-300 group-hover:-translate-y-full h-full"
+							></span>
+							<span
+								class="absolute delay-300 top-0 left-0 w-full bg-[--green] duration-500 group-hover:translate-y-full h-full"
+							></span>
+						</a>
+					</div>
+				</div>
+			</article>
+		</Container>
+	</section>
+</Layout>
