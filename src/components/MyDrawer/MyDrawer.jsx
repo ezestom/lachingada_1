@@ -6,10 +6,10 @@ export function MyDrawer() {
 	return (
 		<Drawer.Root>
 			<Drawer.Trigger asChild>
-				<button className="rounded bg-red-100 p-2 text-gray-600 transition hover:scale-105600/75">
+				<button className="rounded bg-red-100 p-2 text-gray-600 z-50 hover:scale-105600/75 hover:scale-105 transition">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						className="size-5"
+						className="size-6"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
