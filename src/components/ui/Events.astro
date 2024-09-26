@@ -7,7 +7,7 @@ import img from "../../img/0056.png";
 
 <Layout title="">
 	<section
-		class="w-full h-full bg-red-50 z-30 sticky top-0 flex items-center justify-center flex-col min-h-screen"
+		class="w-full h-full bg-red-50 z-20 sticky top-0 flex items-center justify-center flex-col min-h-screen"
 		id="events">
 		<Container>
 			<article
@@ -39,17 +39,29 @@ import img from "../../img/0056.png";
 						Reservá solo salón o la opción integral con la mejor
 						comida mexicana del planeta. Vos elegís ;)
 					</p>
-					<a
-						href="/images-events"
-						class="group flex items-center hover:text-[--green] transition">
-						Ver fotos de los eventos
-						<span
-							class="inline-block ml-2 transition-transform transform group-hover:translate-x-2">
-							→
-						</span>
-					</a>
 
-					<div class="flex gap-4">
+					<div class="flex flex-col items-start gap-2 w-fit">
+						<a
+							href="/images-events"
+							class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+							<span
+								class="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+								Fotos de los eventos
+							</span>
+							<span
+								class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"
+							></span>
+							<span
+								class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"
+							></span>
+
+							<span
+								class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"
+							></span>
+							<span
+								class="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"
+							></span>
+						</a>
 						<a
 							href="#"
 							class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--green]">

@@ -16,7 +16,7 @@ export function Header() {
 							<ul className="flex items-center gap-6 text-sm">
 								<li>
 									<a
-										className="text-[--primary] font-semibold transition hover:scale-105"
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
 										href="#sectionOne">
 										Section 1
 									</a>
@@ -24,7 +24,7 @@ export function Header() {
 
 								<li>
 									<a
-										className="text-[--primary] font-semibold transition hover:scale-105"
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
 										href="#sectionTwo">
 										Section 2
 									</a>
@@ -32,7 +32,7 @@ export function Header() {
 
 								<li>
 									<a
-										className="text-[--primary] font-semibold transition hover:scale-105"
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
 										href="#events">
 										Eventos
 									</a>
@@ -40,9 +40,31 @@ export function Header() {
 
 								<li>
 									<a
-										className="text-[--primary] font-semibold transition hover:scale-105"
-										href="#sectionFour">
-										Section 4
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
+										href="#store">
+										Tienda
+									</a>
+								</li>
+
+								<li>
+									<a
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
+										href="#contact">
+										Contacto
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
+										href="#">
+										Delivery
+									</a>
+								</li>
+								<li>
+									<a
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
+										href="#">
+										Reservas
 									</a>
 								</li>
 							</ul>
