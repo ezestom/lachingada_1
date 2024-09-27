@@ -31,14 +31,14 @@ export function Header() {
 										Eventos
 									</a>
 								</li>
-
+								{/* 
 								<li>
 									<a
 										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
 										href="#history">
 										Historia
 									</a>
-								</li>
+								</li> */}
 
 								<li>
 									<a
