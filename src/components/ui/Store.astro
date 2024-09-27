@@ -10,49 +10,48 @@ import img4 from "../../img/tienda_4.jpeg";
 
 <Layout title="">
 	<section
-		class="w-full h-full bg-red-100 z-20 sticky top-0 flex items-center justify-center flex-col min-h-screen"
+		class="w-full h-full bg-red-100 shadow-md z-20 sticky top-0 flex items-center justify-center flex-col min-h-screen"
 		id="store">
 		<Container>
 			<article
-				class="flex flex-col-reverse mt-0 sm:mt-16 md:mt-0 gap-y-5 md:flex-row-reverse md:justify-between justify-center gap-x-10 w-full h-full">
-				<div
-					class="grid grid-cols-2 content-center sm:max-w-[50%] h-[25%] gap-2">
+				class="flex flex-col-reverse mt-0 sm:mt-16 md:mt-0 gap-y-5 md:flex-row-reverse md:justify-between justify-center gap-x-10 w-full h-full max-h-screen max-w-screen relative">
+				<div class="grid grid-cols-2 grid-rows-2">
 					<Image
-						class="object-cover aspect-square"
+						id="img"
+						class="w-full h-full object-bottom object-cover" 
 						src={img1}
 						alt="Imagen de la sección 3"
 					/>
 					<Image
-						class="object-cover aspect-square"
+						id="img"
+						class="w-full h-full object-bottom object-cover" 
 						src={img2}
 						alt="Imagen de la sección 3"
 					/>
 					<Image
-						class="object-cover aspect-square"
+						id="img"
+						class="w-full h-full object-start object-cover" 
 						src={img3}
 						alt="Imagen de la sección 3"
 					/>
 					<Image
-						class="object-cover aspect-square"
+						id="img"
+						class="w-full h-full object-bottom object-cover" 
 						src={img4}
 						alt="Imagen de la sección 3"
 					/>
 				</div>
-				<div
-					class="w-full md:max-w-[50%] flex flex-col justify-start gap-6">
-					<h1>Tienda</h1>
-					<h2 class="">
-						¿Te gustaría visitar nuestra tienda? Tenemos una
-						propuesta ideal para vos.
-					</h2>
 
-					<div class="flex gap-4">
+				<div
+					class="flex items-center justify-center gap-4 absolute bottom-0 top-0 m-auto right-0 left-0 w-full shadow-md outline-sky-200 outline-2">
+					<div class="flex flex-col bg-red-50 p-10">
+						<h1 class="text-center">Tienda</h1>
 						<a
 							href="#"
 							class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
 							<span
 								class="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
-								Visitar nuestra tienda
+								Visita nuestra tienda online
 							</span>
 							<span
 								class="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"
@@ -73,4 +72,29 @@ import img4 from "../../img/tienda_4.jpeg";
 			</article>
 		</Container>
 	</section>
+
+	<style>
+		#img {
+			position: relative;
+			overflow: hidden;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		#img div::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: radial-gradient(
+				circle,
+				transparent 0%,
+				rgba(0, 0, 0, 0.35) 100%
+			);
+			/* difumina los bordes de cada div */
+
+			pointer-events: none; /* Permite que los eventos de puntero pasen a la imagen de fondo */
+		}
+	</style>
 </Layout>

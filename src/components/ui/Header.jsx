@@ -11,22 +11,16 @@ export function Header() {
 						</a>
 					</div>
 
-					<div className="hidden md:block">
-						<nav aria-label="Global">
-							<ul className="flex items-center gap-6 text-sm">
+					<div className="hidden md:flex items-center justify-center w-full pl-0 md:pl-[274px]">
+						<nav
+							aria-label="Global"
+							className="w-full flex justify-center">
+							<ul className="flex items-center gap-6 text-sm ">
 								<li>
 									<a
 										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
-										href="#sectionOne">
-										Section 1
-									</a>
-								</li>
-
-								<li>
-									<a
-										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
-										href="#sectionTwo">
-										Section 2
+										href="#gallery">
+										Galería
 									</a>
 								</li>
 
@@ -35,6 +29,14 @@ export function Header() {
 										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
 										href="#events">
 										Eventos
+									</a>
+								</li>
+
+								<li>
+									<a
+										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
+										href="#history">
+										Historia
 									</a>
 								</li>
 
@@ -53,45 +55,42 @@ export function Header() {
 										Contacto
 									</a>
 								</li>
-								<li>
-									<a
-										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
-										href="#">
-										Delivery
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-[--primary] hover:text-[--secondary] font-semibold transition hover:scale-105"
-										href="#">
-										Reservas
-									</a>
-								</li>
 							</ul>
 						</nav>
-					</div>
+						<div className="flex items-center gap-2">
+							<div className="flex gap-4">
+								<a
+									href="#"
+									className="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+									<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+										Delivery
+									</span>
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
 
-					<div className="flex items-center gap-4">
-						<div className="flex gap-4">
-							<a
-								href="#"
-								className="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--green]">
-								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--green] duration-500">
-									Whatsapp
-								</span>
-								<span className="absolute top-0 left-0 w-full bg-[--green] duration-500 group-hover:-translate-x-full h-full"></span>
-								<span className="absolute top-0 left-0 w-full bg-[--green] duration-500 group-hover:translate-x-full h-full"></span>
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+									<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
+								</a>
 
-								<span className="absolute top-0 left-0 w-full bg-[--green] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
-								<span className="absolute delay-300 top-0 left-0 w-full bg-[--green] duration-500 group-hover:translate-y-full h-full"></span>
-							</a>
-						</div>
+								<a
+									href="#"
+									className="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+									<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+										Reserva
+									</span>
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
 
-						<div className="block md:hidden z-50">
-							<MyDrawer />
+									<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+									<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="block md:hidden z-50 fixed top-3 right-3">
+				<MyDrawer />
 			</div>
 		</header>
 	);
