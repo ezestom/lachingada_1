@@ -15,7 +15,7 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
 export function EmblaCarousel() {
 	const autoplayOptions = Autoplay(
-		{ delay: 1500, stopOnInteraction: false } // No se detiene al interactuar
+		{ delay: 1750, stopOnInteraction: false } // No se detiene al interactuar
 	);
 
 	const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplayOptions]);

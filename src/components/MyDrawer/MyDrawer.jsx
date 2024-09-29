@@ -33,111 +33,54 @@ export function MyDrawer() {
 						</div>
 					</div>
 					<div className="p-4 bg-zinc-100 border-t border-zinc-200 mt-auto">
-						<div className="flex gap-6 justify-center  mx-auto">
+						<div className="grid grid-cols-2 items-center gap-4  justify-center h-full w-full flex-wrap mx-auto">
 							<a
-								className="text-xs text-zinc-600 flex items-center gap-0.25"
 								href="#"
-								target="_blank">
-								Teléfono
-								<svg
-									fill="none"
-									height="16"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									viewBox="0 0 24 24"
-									width="16"
-									ariaHidden="true"
-									className="w-3 h-3 ml-1">
-									<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-									<path d="M15 3h6v6"></path>
-									<path d="M10 14L21 3"></path>
-								</svg>
+								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+									Whatsapp
+								</span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
+
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+								<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
 							</a>
 							<a
-								className="text-xs text-zinc-600 flex items-center gap-0.25"
 								href="#"
-								target="_blank">
-								Whatsapp
-								<svg
-									fill="none"
-									height="16"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									viewBox="0 0 24 24"
-									width="16"
-									ariaHidden="true"
-									className="w-3 h-3 ml-1">
-									<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-									<path d="M15 3h6v6"></path>
-									<path d="M10 14L21 3"></path>
-								</svg>
+								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+									Instagram
+								</span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
+
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+								<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
 							</a>
 							<a
-								className="text-xs text-zinc-600 flex items-center gap-0.25"
 								href="#"
-								target="_blank">
-								Instagram
-								<svg
-									fill="none"
-									height="16"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									viewBox="0 0 24 24"
-									width="16"
-									ariaHidden="true"
-									className="w-3 h-3 ml-1">
-									<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-									<path d="M15 3h6v6"></path>
-									<path d="M10 14L21 3"></path>
-								</svg>
+								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+									Reservas
+								</span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
+
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+								<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
 							</a>
 							<a
-								className="text-xs text-zinc-600 flex items-center gap-0.25"
 								href="#"
-								target="_blank">
-								Delivery
-								<svg
-									fill="none"
-									height="16"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									viewBox="0 0 24 24"
-									width="16"
-									ariaHidden="true"
-									className="w-3 h-3 ml-1">
-									<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-									<path d="M15 3h6v6"></path>
-									<path d="M10 14L21 3"></path>
-								</svg>
-							</a>
-							<a
-								className="text-xs text-zinc-600 flex items-center gap-0.25"
-								href="#"
-								target="_blank">
-								Reservas
-								<svg
-									fill="none"
-									height="16"
-									stroke="currentColor"
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									viewBox="0 0 24 24"
-									width="16"
-									ariaHidden="true"
-									className="w-3 h-3 ml-1">
-									<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-									<path d="M15 3h6v6"></path>
-									<path d="M10 14L21 3"></path>
-								</svg>
+								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
+									Delivery
+								</span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
+
+								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
+								<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
 							</a>
 						</div>
 					</div>

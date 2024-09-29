@@ -1,6 +1,7 @@
 .embla {
-	max-width: 48rem;
+	max-width: 100%; /* Asegura que la galería se ajuste al tamaño del viewport */
 	margin: auto;
+	overflow: hidden; /* Controla el desbordamiento */
 	--slide-height: 19rem;
 	--slide-spacing: 1rem;
 	--slide-size: 50%;
