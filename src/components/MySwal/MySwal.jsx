@@ -23,12 +23,12 @@ const MySweetAlert = () => {
 				html: (
 					<div className=" flex justify-evenly w-full">
 						<a
-							className="bg-[--secondary] hover:scale-105 transition rounded-md text-[--principal] p-4"
+							className="bg-[--secondary] w-[150px] hover:scale-105 transition text-[--principal] p-4"
 							href="https://github.com/ezestom">
 							Delivery
 						</a>
 						<a
-							className="bg-[--secondary] hover:scale-105 transition rounded-md text-[--principal] p-4"
+							className="bg-[--secondary] w-[150px] hover:scale-105 transition text-[--principal] p-4"
 							href="https://github.com/ezestom">
 							Reservas
 						</a>
