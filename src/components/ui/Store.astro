@@ -10,7 +10,7 @@ import img4 from "../../img/tienda_4.jpeg";
 
 <Layout title="">
 	<section
-		class="w-full h-full bg-red-100 shadow-md z-20 sticky top-0 flex items-center justify-center flex-col min-h-screen"
+		class="w-full h-full bg-red-100 shadow-md z-20 top-0 flex items-center justify-center flex-col py-10"
 		id="store">
 		<Container>
 			<article
@@ -24,7 +24,7 @@ import img4 from "../../img/tienda_4.jpeg";
 					/>
 					<Image
 						id="img"
-						class="w-full h-full object-bottom object-cover"
+						class="w-full h-full object-botto hover:scale-105m object-cover"
 						src={img2}
 						alt="Imagen de la sección 3"
 					/>
@@ -36,7 +36,7 @@ import img4 from "../../img/tienda_4.jpeg";
 					/>
 					<Image
 						id="img"
-						class="w-full h-full object-bottom object-cover"
+						class="w-full h-full object-botto hover:scale-105m object-cover"
 						src={img4}
 						alt="Imagen de la sección 3"
 					/>
@@ -44,8 +44,8 @@ import img4 from "../../img/tienda_4.jpeg";
 
 				<div
 					class="flex items-center justify-center gap-4 absolute bottom-0 top-0 m-auto right-0 left-0 w-full">
-					<div class="flex flex-col bg-red-50 p-10 shadow-md">
-						<h1 class="text-center">Tienda</h1>
+					<div class="flex flex-col bg-red-50/85 p-8 sm:p-16 shadow-md">
+						<h1 class="text-center sm:text-[7rem]">Tienda</h1>
 						<a
 							href="#"
 							class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
@@ -72,29 +72,4 @@ import img4 from "../../img/tienda_4.jpeg";
 			</article>
 		</Container>
 	</section>
-
-	<style>
-		#img {
-			position: relative;
-			overflow: hidden;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-		#img div::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background: radial-gradient(
-				circle,
-				transparent 0%,
-				rgba(0, 0, 0, 0.35) 100%
-			);
-			/* difumina los bordes de cada div */
-
-			pointer-events: none; /* Permite que los eventos de puntero pasen a la imagen de fondo */
-		}
-	</style>
 </Layout>

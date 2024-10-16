@@ -7,7 +7,7 @@ import compareArrow from "../../icons/compareArrow.svg";
 
 <Layout title="">
 	<section
-		class="w-full h-full bg-red-100 z-10 sticky top-0 flex items-center justify-center flex-col min-h-screen"
+		class="w-full h-full bg-red-100 z-10 top-0 flex items-center justify-center flex-col min-h-screen relative"
 		id="gallery">
 		<Container>
 			<article
@@ -16,11 +16,29 @@ import compareArrow from "../../icons/compareArrow.svg";
 					<EmblaCarousel client:visible />
 				</div>
 			</article>
+			<div class="flex items-center w-full justify-center mt-4">
+				<a
+					href="#"
+					class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--primary]">
+					<span
+						class="font-semibold text-white text-sm relative z-10 group-hover:text-[--primary] duration-500">
+						Pedir
+					</span>
+					<span
+						class="absolute top-0 left-0 w-full bg-[--primary] duration-500 group-hover:-translate-x-full h-full"
+					></span>
+					<span
+						class="absolute top-0 left-0 w-full bg-[--primary] duration-500 group-hover:translate-x-full h-full"
+					></span>
+
+					<span
+						class="absolute top-0 left-0 w-full bg-[--primary] duration-500 delay-300 group-hover:-translate-y-full h-full"
+					></span>
+					<span
+						class="absolute delay-300 top-0 left-0 w-full bg-[--primary] duration-500 group-hover:translate-y-full h-full"
+					></span>
+				</a>
+			</div>
 		</Container>
-		<img
-			src={compareArrow.src}
-			alt=""
-			class="absolute bottom-20 sm:bottom-12 m-auto right-0 left-0 z-50 drop-shadow-sm -rotate-12 opacity-50"
-		/>
 	</section>
 </Layout>

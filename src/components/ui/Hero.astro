@@ -4,10 +4,10 @@ import MySwal from "../MySwal/MySwal.jsx";
 import BackButton from "../BackButton.astro";
 ---
 
-<section class="h-[100dvh] w-[100dvw]">
+<section class="h-[100vh] max-w-[100vw]">
 	<Header client:load />
 	<MySwal client:visible />
-	<div class="parent pt-16 fixed top-0 -z-10 max-w-[100dvw]">
+	<div class="parent pt-16 top-0 -z-10 max-w-[100dvw] overflow-hidden">
 		<div class="div1"></div>
 		<div class="div2"></div>
 		<div class="div3"></div>
