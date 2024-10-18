@@ -2,10 +2,10 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import Container from "./Container.astro";
-import img1 from "../../img/tienda_1.jpeg";
-import img2 from "../../img/tienda_2.jpeg";
-import img3 from "../../img/tienda_3.jpeg";
-import img4 from "../../img/tienda_4.jpeg";
+import img1 from "../../img/store/tienda_1.jpg";
+import img2 from "../../img/store/tienda_2.jpg";
+import img3 from "../../img/store/tienda_3.jpg";
+import img4 from "../../img/store/tienda_4.jpg";
 ---
 
 <Layout title="">
@@ -44,7 +44,8 @@ import img4 from "../../img/tienda_4.jpeg";
 
 				<div
 					class="flex items-center justify-center gap-4 absolute bottom-0 top-0 m-auto right-0 left-0 w-full">
-					<div class="flex flex-col bg-red-50/85 p-8 sm:p-16 shadow-md">
+					<div
+						class="flex flex-col bg-red-50/85 hover:bg-red-50 transition p-8 sm:p-16 shadow-md">
 						<h1 class="text-center sm:text-[7rem]">Tienda</h1>
 						<a
 							href="#"

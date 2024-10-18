@@ -11,34 +11,34 @@ import compareArrow from "../../icons/compareArrow.svg";
 		id="gallery">
 		<Container>
 			<article
-				class="flex flex-col mt-16 md:mt-0 md:flex-row md:justify-between justify-center gap-10 w-full relative">
+				class="flex flex-col mt-16 md:mt-0 items-start sm:items-center md:justify-between justify-center gap-10 w-full relative">
 				<div class="w-full">
 					<EmblaCarousel client:visible />
 				</div>
+				<div class="flex items-center w-fit justify-center mt-4">
+					<a
+						href="#"
+						class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--primary]">
+						<span
+							class="font-semibold text-white text-sm relative z-10 group-hover:text-[--primary] duration-500">
+							Pedir
+						</span>
+						<span
+							class="absolute top-0 left-0 w-full bg-[--primary] duration-500 group-hover:-translate-x-full h-full"
+						></span>
+						<span
+							class="absolute top-0 left-0 w-full bg-[--primary] duration-500 group-hover:translate-x-full h-full"
+						></span>
+		
+						<span
+							class="absolute top-0 left-0 w-full bg-[--primary] duration-500 delay-300 group-hover:-translate-y-full h-full"
+						></span>
+						<span
+							class="absolute delay-300 top-0 left-0 w-full bg-[--primary] duration-500 group-hover:translate-y-full h-full"
+						></span>
+					</a>
+				</div>
 			</article>
-			<div class="flex items-center w-full justify-center mt-4">
-				<a
-					href="#"
-					class="cursor-pointer relative group overflow-hidden border-2 px-8 py-2 border-[--primary]">
-					<span
-						class="font-semibold text-white text-sm relative z-10 group-hover:text-[--primary] duration-500">
-						Pedir
-					</span>
-					<span
-						class="absolute top-0 left-0 w-full bg-[--primary] duration-500 group-hover:-translate-x-full h-full"
-					></span>
-					<span
-						class="absolute top-0 left-0 w-full bg-[--primary] duration-500 group-hover:translate-x-full h-full"
-					></span>
-
-					<span
-						class="absolute top-0 left-0 w-full bg-[--primary] duration-500 delay-300 group-hover:-translate-y-full h-full"
-					></span>
-					<span
-						class="absolute delay-300 top-0 left-0 w-full bg-[--primary] duration-500 group-hover:translate-y-full h-full"
-					></span>
-				</a>
-			</div>
 		</Container>
 	</section>
 </Layout>
