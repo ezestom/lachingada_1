@@ -74,7 +74,7 @@ export function MyDrawer() {
 								href="#"
 								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
 								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
-									Delivery
+									Pedir
 								</span>
 								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
 								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>

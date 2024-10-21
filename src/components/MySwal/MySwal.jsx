@@ -25,7 +25,7 @@ const MySweetAlert = () => {
 						<a
 							className="bg-[--secondary] w-[150px] hover:scale-105 transition text-[--principal] p-4"
 							href="https://github.com/ezestom">
-							Delivery
+							Pedir
 						</a>
 						<a
 							className="bg-[--secondary] w-[150px] hover:scale-105 transition text-[--principal] p-4"

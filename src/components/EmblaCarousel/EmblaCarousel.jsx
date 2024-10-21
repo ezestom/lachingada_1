@@ -75,7 +75,7 @@ const images = [
 
 export function EmblaCarousel() {
 	const autoplayOptions = Autoplay(
-		{ delay: 1750, stopOnInteraction: false } // No se detiene al interactuar
+		{ delay: 1500, stopOnInteraction: false, speed: 2500 } // No se detiene al interactuar
 	);
 
 	const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplayOptions]);
@@ -88,7 +88,7 @@ export function EmblaCarousel() {
 						className="embla__slide hover:cursor-grab  "
 						key={index}>
 						<img
-							className="embla__slide__img max-h-[500px] w-full object-cover object-center"
+							className="embla__slide__img max-h-[600px] w-full object-cover object-center"
 							src={img.src}
 							alt=""
 						/>

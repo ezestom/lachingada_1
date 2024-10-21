@@ -82,7 +82,7 @@ export function Form() {
 								</label>
 
 								<textarea
-									className="w-full h-[150px] border-gray-200 p-3 text-sm"
+									className="w-full max-h-36 border-gray-200 p-3 text-sm"
 									placeholder="Mensaje"
 									rows="8"
 									id="message"></textarea>
