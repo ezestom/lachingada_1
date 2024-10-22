@@ -5,12 +5,14 @@ import Events from "../components/ui/Events.astro";
 import Store from "../components/ui/Store.astro";
 import Contact from "../components/ui/Contact.astro";
 import Footer from "../components/ui/Footer.astro";
-import Hero from "../components/ui/Hero.astro";
+import { Hero } from "../components/ui/Hero.jsx";
 import Layout from "../layouts/Layout.astro";
+import BackButton from "../components/BackButton.astro";
 ---
 
 <Layout title="Bienvenidos a La Chingada - Restaurante Mexicano 🌮">
-	<Hero />
+	<Hero client:load />
+	 <BackButton /> 
 	<main>
 		<Gallery />
 		<Events />
