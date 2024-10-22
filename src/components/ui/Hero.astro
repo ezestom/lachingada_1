@@ -8,12 +8,7 @@ import BackButton from "../BackButton.astro";
 	<Header client:load />
 	<MySwal client:visible />
 	<div class="parent pt-16 top-0 -z-10 max-w-[100dvw] overflow-hidden">
-		<div class="div1"></div>
-		<div class="div2"></div>
-		<div class="div3"></div>
-		<div class="div4"></div>
-		<div class="div5"></div>
-		<div class="div6"></div>
+		{[1, 2, 3, 4, 5, 6].map((item) => <div class={`div${item}`} />)}
 	</div>
 	<!-- <div class="bg-yellow-300 w-12 h-9 z-100 fixed m-auto"></div> -->
 	<BackButton />
