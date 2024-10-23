@@ -1,6 +1,5 @@
 import { Header } from "./Header.jsx";
 import MySwal from "../MySwal/MySwal.jsx";
-import BackButton from "../BackButton.astro";
 import { useEffect, useState } from "react";
 import "./Hero.css";
 import bg from "../../img/logorosa.png";
@@ -23,12 +22,10 @@ export function Hero() {
 			) : (
 				<div class="parent pt-16 top-0 -z-10 max-w-[100dvw] overflow-hidden">
 					{[1, 2, 3, 4, 5, 6].map((item) => (
-						<div class={`div${item}`} />
+						<div className={`div${item}`} />
 					))}
 				</div>
 			)}
-
-			
 		</section>
 	);
 }

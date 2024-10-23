@@ -164,8 +164,8 @@ export function Form() {
 										className="w-full max-h-36 border-gray-200 p-3 text-sm"
 										placeholder="Escribe tu mensaje aquí..."
 										rows="8"
-										name="email"
-										id="email"
+										name="message"
+										id="message"
 										required></textarea>
 								</label>
 							</div>
