@@ -20,7 +20,9 @@ export function GridSwiper(props) {
 	}, []);
 
 	useEffect(() => {
-		setIsLoading(false);
+		if (props.images.length > 0) {
+			setIsLoading(false);
+		}
 	}, [isLoading]);
 
 	return (

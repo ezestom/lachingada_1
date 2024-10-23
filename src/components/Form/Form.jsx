@@ -102,7 +102,7 @@ export function Form() {
 							className="space-y-4 "
 							onSubmit={handleSubmit}
 							method="POST"
-							action="https://formsubmit.co/ezequielstom@gmail.com">
+							action="https://formsubmit.co/lachingadauy@gmail.com">
 							<div>
 								<input
 									type="hidden"

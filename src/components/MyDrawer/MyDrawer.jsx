@@ -35,7 +35,8 @@ export function MyDrawer() {
 					<div className="p-4 bg-zinc-100 border-t border-zinc-200 mt-auto">
 						<div className="grid grid-cols-2 items-center gap-4  justify-center h-full w-full flex-wrap mx-auto">
 							<a
-								href="#"
+								href="https://wa.me/59897477434"
+								target="_blank"
 								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
 								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
 									Whatsapp
@@ -47,14 +48,16 @@ export function MyDrawer() {
 								<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
 							</a>
 							<a
-								href="#"
-								className="cursor-pointer text-center relative group overflow-hidden border-2 px-8 py-2 border-[--secondary]">
+								href="https://www.instagram.com/lachingadamvd"
+								target="_blank"
+								className="cursor-pointer text-center relative
+								group overflow-hidden border-2 px-8 py-2
+								border-[--secondary]">
 								<span className="font-semibold text-white text-sm relative z-10 group-hover:text-[--secondary] duration-500">
 									Instagram
 								</span>
 								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:-translate-x-full h-full"></span>
 								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-x-full h-full"></span>
-
 								<span className="absolute top-0 left-0 w-full bg-[--secondary] duration-500 delay-300 group-hover:-translate-y-full h-full"></span>
 								<span className="absolute delay-300 top-0 left-0 w-full bg-[--secondary] duration-500 group-hover:translate-y-full h-full"></span>
 							</a>
